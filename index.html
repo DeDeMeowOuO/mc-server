@@ -285,7 +285,7 @@ const panel = document.getElementById('info-panel');
 const dropdown = document.getElementById('player-select');
 
 try {
-const response = await fetch(`https://ddei5-0-ctp.trendmicro.com:443/wis/clicktime/v1/query?url=https%3a%2f%2fapi.mcsrvstat.us%2f2%2f&umid=E1E3C79C-520D-FD06-B6CF-1F5B5440DDBC&auth=3e35dbc6cb6cfa652144c687b486efc917e42372-630ab518b927e8e7d22451f63baebbe202acf686${SERVER_IP}`);
+const response = await fetch(`https://api.mcsrvstat.us/2/${SERVER_IP}`);
 const data = await response.json();
 
 if (data.online) {
